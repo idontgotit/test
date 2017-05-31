@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Home</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+
+
+<ion-content padding class="home">
+
+    <ion-grid>
+        <ion-row>
+            <ion-col width-33>
+            </ion-col>
+            <ion-col width-33>
+                <img src="img/jira1.png" alt="">
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+
+
+    <ion-list>
+        <ion-item>
+            <ion-label fixed>Username</ion-label>
+            <ion-input [(ngModel)]="username" type="text" value=""></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label fixed>Password</ion-label>
+            <ion-input [(ngModel)]="password" type="password" value=""></ion-input>
+        </ion-item>
+
+    </ion-list>
+
+    <button (click)="save()">Save</button>
+    <button (click)="load()">Load</button>
+    <button (click)="changePage()">ChangePage</button>
+</ion-content>

@@ -1,0 +1,10 @@
+
+<ion-header>
+    <ion-navbar>
+        <ion-title>Issues Name</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-tabs>
+    <ion-tab [root]="tab1Root" tabTitle="Details" tabIcon="information-circle" [rootParams]="selectedItem"></ion-tab>
+    <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle" [rootParams]="selectedItem"></ion-tab>
+</ion-tabs>
